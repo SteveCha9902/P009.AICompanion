@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "P009 AICompanion",
+    "slug": "p009-aicompanion",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.p009.aicompanion",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "P009 requires microphone access for real-time voice conversations with your companion.",
+        "NSCameraUsageDescription": "P009 requires camera access to observe your surroundings and visual context."
+      }
+    },
+    "android": {
+      "package": "com.p009.aicompanion",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#1E1E1E",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA",
+        "android.permission.INTERNET"
+      ],
+      "usesCleartextTraffic": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-status-bar",
+      "expo-audio"
+    ]
+  }
+}
